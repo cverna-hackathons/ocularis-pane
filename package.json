@@ -1,0 +1,43 @@
+{
+  "name": "ocularis-pane",
+  "version": "0.0.1",
+  "description": "Ocularis sample component - pane.",
+  "main": "./dist/index.js",
+  "jsnext:main": "./dist/index.es6.js",
+  "scripts": {
+    "prebuild": "exit 0",
+    "build": "rollup -i ./lib/index.js > ./dist/index.es6.js && babel --presets es2015 --out-file ./dist/index.js < ./dist/index.es6.js",
+    "pretest": "exit 0",
+    "test": "exit 0",
+    "prepublish": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cverna-hackathons/ocularis-pane.git"
+  },
+  "keywords": [
+    "ocularis",
+    "webvr",
+    "es6",
+    "modules",
+    "rollup",
+    "bundle",
+    "browser"
+  ],
+  "author": "Peter Berezny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cverna-hackathons/ocularis-pane/issues"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "homepage": "https://github.com/cverna-hackathons/ocularis-pane#readme",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "rollup": "^0.24.1"
+  },
+  "dependencies": {}
+}
