@@ -1,0 +1,13 @@
+{
+  "name": "ocularis-pane",
+  "url": "git@github.com:cverna-hackathons/ocularis-pane.git",
+  "fields": [{
+    "title": "Main text",
+    "name": "main",
+    "type": "text"
+  }, {
+    "title": "Left stripe",
+    "name": "leftSide",
+    "type": "image"
+  }]
+}
