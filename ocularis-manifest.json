@@ -4,10 +4,10 @@
   "fields": [{
     "title": "Main text",
     "name": "main",
-    "type": "text"
+    "types": ["text"]
   }, {
     "title": "Left stripe",
     "name": "leftSide",
-    "type": "image"
+    "types": ["image"]
   }]
 }
